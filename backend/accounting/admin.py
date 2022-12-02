@@ -3,6 +3,8 @@ from treenode.admin import TreeNodeModelAdmin
 from treenode.forms import TreeNodeForm
 
 from .models import Account
+from .models import Transaction
+from .models import JournalEntry
 
 
 class AccountAdmin(TreeNodeModelAdmin):
@@ -20,3 +22,5 @@ class AccountAdmin(TreeNodeModelAdmin):
 
 
 admin.site.register(Account, AccountAdmin)
+admin.site.register(Transaction)
+admin.site.register(JournalEntry)
